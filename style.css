@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111318;
+    color: white;
+    min-height: 100vh;
+}
+
+header {
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #292d36;
+}
+
+header h1 {
+    font-size: 24px;
+}
+
+header span {
+    color: #aaa;
+}
+
+main {
+    width: 92%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+.card {
+    background: #191d26;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #292d36;
+}
+
+.card h2 {
+    margin-bottom: 20px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.login-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #bbb;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #343944;
+    border-radius: 5px;
+    background: #101218;
+    color: white;
+}
+
+button {
+    margin-top: 20px;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #367cff;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#message,
+#loginMessage {
+    margin-top: 12px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #2b3039;
+}
+
+th {
+    color: #aaa;
+}
+
+.action-btn {
+    margin: 0 5px 0 0;
+    padding: 7px 12px;
+}
+
+.delete {
+    background: #e5484d;
+}
+
+.edit {
+    background: #367cff;
+}
+
+@media (max-width: 800px) {
+
+    .form-grid,
+    .login-grid {
+        grid-template-columns: 1fr;
+    }
+
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    header {
+        padding: 15px;
+    }
+}
